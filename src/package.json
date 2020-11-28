@@ -1,18 +1,18 @@
 {
-    "name": "nativescript-youtubeplayer",
-    "version": "3.0.1",
+    "name": "@cdev38399/nativescript-youtubeplayer",
+    "version": "4.0.0",
     "description": "YoutubePlayer for Nativescript",
     "main": "youtubeplayer",
     "typings": "index.d.ts",
     "nativescript": {
         "platforms": {
-            "android": "4.0.0",
-            "ios": "4.0.1"
+            "android": "7.0.0",
+            "ios": "7.0.0"
         }
     },
     "scripts": {
         "tsc": "tsc -skipLibCheck",
-        "build": "npm i && tsc",
+        "build": "npm i && ts-patch install && tsc",
         "test.android": "npm i && npm run tsc && npm run tslint && cd ../demo && tns build android && tns test android --justlaunch",
         "test.ios": "npm i && npm run tsc && npm run tslint && cd ../demo && tns build ios && tns test ios --justlaunch",
         "tslint": "cd .. && tslint \"**/*.ts\" --config tslint.json --exclude \"**/+(node_modules|typings)/**\"",
@@ -41,14 +41,14 @@
         "video"
     ],
     "author": {
-        "name": "Osei Fortune",
-        "email": "fortune.osei@yahoo.com"
+        "name": "cdev38399",
+        "email": "cdev38399@gmail.com"
     },
     "bugs": {
-        "url": "https://github.com/triniwiz/nativescript-youtubeplayer/issues"
+        "url": "https://github.com/cdev38399/nativescript-youtubeplayer/issues"
     },
     "license": "Apache-2.0",
-    "homepage": "https://github.com/triniwiz/nativescript-youtubeplayer",
+    "homepage": "https://github.com/cdev38399/nativescript-youtubeplayer",
     "readmeFilename": "README.md",
     "devDependencies": {
         "@angular/core": "~6.1.0",
