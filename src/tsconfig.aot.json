@@ -7,20 +7,24 @@
       "removeComments": true,
       "declaration": true,
       "experimentalDecorators": true,
-      "target": "es5",
-      "module": "commonjs",
-      "lib": ["es6", "dom", "es2015.iterable"],
+      "target": "es2017",
+      "module": "esnext",
+      "lib": ["es2017", "dom"],
       "rootDir": ".",
       "baseUrl": ".",
       "paths": {
-          "*": [
-          "./node_modules/tns-core-modules/*",
-          "./node_modules/*"
-          ]
-      },
+        "*": [
+        "./node_modules/@nativescript/core/*",
+        "./node_modules/*"
+        ]
+      },      
       "emitDecoratorMetadata": true,
-      "moduleResolution": "node"
-  },
+      "moduleResolution": "node",
+      "plugins": [{
+        "transform": "@nativescript/webpack/transformers/ns-transform-native-classes",
+        "type": "raw"
+      }]    
+    },
   "files": [
       "angular/index.ts"
   ],
