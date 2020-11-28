@@ -1,4 +1,4 @@
-var Youtubeplayer = require("nativescript-youtubeplayer").Youtubeplayer;
+var Youtubeplayer = require("@cdev38399/nativescript-youtubeplayer").Youtubeplayer;
 var youtubeplayer = new Youtubeplayer();
 
 describe("greet function", function() {
